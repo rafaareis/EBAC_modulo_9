@@ -5,21 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sono:wght@300;600&display=swap" rel="stylesheet">
     <title>Lista de Tarefas</title>
 </head>
 <body>
-    <header>
-        <h1>Lista de Tarefas</h1>
-    </header>
-    <form>
-        <input type="text" placeholder="Nome da Tarefa" id="nome-tarefa" />
-        <button type="submit">Cadastrar</button>
-    </form>
-    <main>
-        <ul>
-            <!-- <li class="lista-tarefa">Escovar os dentes</li> -->
-        </ul>
-    </main>
+
+    <div class="container">
+        <h1>Lista de Tarefas</h1>  
+        <form>
+            <input type="text" placeholder="Nome da Tarefa" id="nome-tarefa"  required />
+            <button type="submit">Cadastrar</button>
+        </form>
+        <div class="container-ul">
+            <ul>
+                <!-- <li class="lista-tarefa">Escovar os dentes</li> -->
+            </ul>    
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="main.js"></script>
 </body>
