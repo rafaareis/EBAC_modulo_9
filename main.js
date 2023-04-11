@@ -10,7 +10,11 @@ $(document).ready(function() {
     })
 
     $('ul').on('click','li', function(e) {
+        if($(this).hasClass('feito')) {
+            $(this).removeClass('feito');
+        } else {
         console.log('cliquei na tarefa');
         $(this).addClass('feito');
+        }
     })
 })
